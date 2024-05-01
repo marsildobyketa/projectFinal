@@ -2,7 +2,7 @@ from ImageTumorClassifierProject import logger
 from ImageTumorClassifierProject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from ImageTumorClassifierProject.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
 from ImageTumorClassifierProject.pipeline.stage_03_model_training import ModelTrainingPipeline
-from ImageTumorClassifierProject.pipeline.stage_04_model_evaluation import EvaluationPipeline
+from src.ImageTumorClassifierProject.pipeline.stage_04_model_evaluation import EvaluationPipeline
 
 STAGE_NAME = "Data Ingestion stage"
 try:
@@ -25,7 +25,6 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
-
 
 
 STAGE_NAME = "Training"
